@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     
+    <div class="major">
+    <section class="main">
+
+        <div class="currency">
+    <span>Currency</span> <br>
+     <select name="currency" id="CURRENCY">
+        <option value="kes">KES</option>
+        <option value="naira">NAIRA</option>
+        <option value="dinar">DINAR</option>
+       <option value="usd">USD</option>
+       <option value="euro">EURO</option>
+       <option value="rwf">RWF</option>
+       <option value="jyn">JYN</option>
+       <option value="won">WON</option>
+    </select>
+</div>
+
+<div class="currency">
+<span>Currency</span> <br>
+
+ <select name="currency" id="CURRENCY">
+    <option value="kes">KES</option>
+    <option value="naira">NAIRA</option>
+    <option value="dinar">DINAR</option>
+   <option value="usd">USD</option>
+   <option value="euro">EURO</option>
+   <option value="rwf">RWF</option>
+   <option value="jyn">JYN</option>
+   <option value="won">WON</option>
+</select>
+</div>
+</section>
+
+       <section class="main2">
+        <div class="country">
+    <span>From</span> <br>
+        <select name="country" id="COUNTRY">
+        <option value="kenya">KENYA</option>
+        <option value="algeria">ALGERIA</option>
+        <option value="rwanda">RWANDA</option>
+        <option value="nigeria">NIGERIA</option>
+        <option value="us">US</option>
+        <option value="korea">KOREA</option>
+        <option value="germany">GERMANY</option>
+        <option value="china">CHINA</option>
+        <option value="nigeria">NIGERIA</option>  
+        <option value="japan">JAPAN</option> 
+  </select>
+</div>
+   
+<div class="country">
+    <span>To</span> <br>
+        <select name="country" id="COUNTRY">
+        <option value="kenya">KENYA</option>
+        <option value="algeria">ALGERIA</option>
+        <option value="rwanda">RWANDA</option>
+        <option value="nigeria">NIGERIA</option>
+        <option value="us">US</option>
+        <option value="korea">KOREA</option>
+        <option value="germany">GERMANY</option>
+        <option value="china">CHINA</option>
+        <option value="nigeria">NIGERIA</option>  
+        <option value="japan">JAPAN</option> 
+  </select>
+</div>
+</section>
+
+    <button class="btn" id="active"><a href="contact.html"></a>Convert</button>
+
+</div>
+
+    <h1>Gender</h1>
+    <h2>Your gender is <span id="gender"></span></h2>
+    <h2>Your country is <span id="country"></span></h2>
+    <h2>Your city is <span id="city"></span></h2>
+    <h2>Your currency is <span id="currency"></span></h2>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        const cntry = 254;
+        const cty = "London";
+        const currcy = "Dollar";
+        if(cntry === 254){
+            $('#country').text("Kenya");
+        }
+        else if(cntry !== 254){
+            $('#country').text("Ugandan");
+        }
+        else{
+            $('#country').text("Rwanda");
+        }
+
+        const gen = 2;
+        // if(gen === 1){
+        //     $('#gender').text("Male");         
+
+        // }
+        //  else if(gen === 2){
+        //     $('#gender').text("Female"); 
+        // }
+        // else
+        // {
+        //         $('#gender').text("Other");
+        //     }
+         
+
+        gen === 1 ? $('#gender').text("Male")
+        // ? gen === 2 $("#gender").text("other")
+        :
+        $('#gender').text("Female");
+
+            if(cty === "London"){
+            $('#city').text("London");         
+
+        }
+         else if(cty !== "London"){
+            $('#city').text("Hawai"); 
+        }
+        else
+        {
+                $('#city').text("Nairobi");
+            }
+
+            if(currcy === "Dollar"){
+            $('#currency').text("Dollar");         
+
+        }
+         else if(gen !== "Dollar"){
+            $('#currency').text("Euro"); 
+        }
+        else
+        {
+                $('#currency').text("Ksh");
+            }
+     
+    </script>
+    <!-- <i class="fa-regular fa-code-simple"></i> -->
+
+</body>
+</html>
