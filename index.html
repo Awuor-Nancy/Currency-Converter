@@ -10,11 +10,12 @@
 <body>
      
     <div class="major">
+        <h1 style="text-align:center;">Please Enter Currency to be Converted</h1>
     <section class="main">
 
         <div class="currency">
-    <span>Currency</span> <br>
-     <select name="currency" id="CURRENCY">
+    <span>From</span> <br>
+     <select name="currency" id="from">
         <option value="kes">KES</option>
         <option value="naira">NAIRA</option>
         <option value="dinar">DINAR</option>
@@ -27,9 +28,9 @@
 </div>
 
 <div class="currency">
-<span>Currency</span> <br>
+<span>To</span> <br>
 
- <select name="currency" id="CURRENCY">
+ <select name="currency" id="to">
     <option value="kes">KES</option>
     <option value="naira">NAIRA</option>
     <option value="dinar">DINAR</option>
@@ -42,10 +43,11 @@
 </div>
 </section>
 
-       <section class="main2">
+    <section class="main2">
         <div class="country">
+            
     <span>From</span> <br>
-        <select name="country" id="COUNTRY">
+        <select name="country" id="from1">
         <option value="kenya">KENYA</option>
         <option value="algeria">ALGERIA</option>
         <option value="rwanda">RWANDA</option>
@@ -61,7 +63,7 @@
    
 <div class="country">
     <span>To</span> <br>
-        <select name="country" id="COUNTRY">
+        <select name="country" id="to1">
         <option value="kenya">KENYA</option>
         <option value="algeria">ALGERIA</option>
         <option value="rwanda">RWANDA</option>
@@ -75,9 +77,14 @@
   </select>
 </div>
 </section>
+             <div class="total">
+            <label>Amount:</label>
+            <input type="text" id="amount" />
+            <button type="btn" id="convert">Convert</button>
+            <p id="result"></p>
+        </div>
 
-    <button class="btn" id="active"><a href="contact.html"></a>Convert</button>
-
+    <!-- <button class="btn" id="active"><a href="contact.html"></a>Convert</button> -->
 </div>
 
     <h1>Gender</h1>

@@ -1,17 +1,17 @@
 
 body{
-    /* background-color: #fdcf169c; */
-    background-color: #000000;
+    
+    background-color: #ff9306;
 }
 .major{
     padding: 40px;
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.54);
+/*     
+background: rgba(255, 98, 1, 0.54);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.1px);
 -webkit-backdrop-filter: blur(1.1px);
-border: 1px solid rgba(255, 255, 255, 0.09);
+border: 1px solid rgba(255, 255, 255, 0.09); */
     
 }
 .main{
@@ -59,7 +59,7 @@ span{
     width: 15%;
     height: 60px;
     background: #000000;
-    color: white;
+    color: rgb(255, 4, 4);
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -67,6 +67,9 @@ span{
     margin-left: 43%;
     margin-top: 50px;
     
+  }
+  .total{
+    align-items: center;
   }
 
 
